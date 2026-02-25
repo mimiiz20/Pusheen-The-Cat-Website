@@ -23,7 +23,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 
-    color: #00aeff;
+    color: #92d6f5;
     font-family: "Delius", cursive;
     text-align: center;
     overflow-x: hidden; /* Evita que a chuva crie barras de rolagem */
@@ -32,8 +32,8 @@ body {
 /* --- Imagens da Galeria --- */
 img {
     border-radius: 20px;
-    border: 5px solid #00aeff;
-    box-shadow: 0px 0px 20px #00aeff; /* Corrigido de 0x para 0px */
+    border: 5px solid #92d6f5;
+    box-shadow: 0px 0px 20px #92d6f5; /* Corrigido de 0x para 0px */
     width: 400px;
     height: 280px;
     margin: 15px; /* Espaço entre as imagens */
@@ -45,6 +45,75 @@ img:hover {
     filter: grayscale(0);
     cursor: pointer;
 }
+
+.foto-post {
+    filter: sepia (0.8);
+    filter: blur (5px);
+    filter: hue-rotate(90deg);
+    filter: drop-shadow(10px 10px 30px rgb(209, 125, 235));
+}
+
+.player-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 3px solid #ff85c1;
+    z-index: 1000;
+}
+
+/* Container do botão para alinhar tudo em linha */
+#botao-controle {
+    display: flex;
+    align-items: center;    /* Centraliza os itens verticalmente */
+    gap: 15px;              /* Espaço entre ícone, texto e imagem */
+    padding: 10px 20px;
+    background-color: #ffb6c1; 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Delius', sans-serif;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Organiza o texto em duas linhas (uma pequena e uma negrito) */
+.info-musica {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    line-height: 1.2;
+}
+
+.status-texto {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.nome-musica {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Controla o tamanho da imagem da Pusheen dentro do botão */
+.pusheen-botao {
+    width: 30px;
+    height: auto;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+}
+
+#botao-controle:hover {
+    background-color: #ff9ead;
+    transform: scale(1.02);
+}
+
 
 /* --- EFEITO DA CHUVA --- */
 @keyframes quedaInfinita {

@@ -10,7 +10,7 @@
         <h2>Little Pusheen says: Hello</h2>
         <p>Este site esta sendo criado agora!</p>
         <img src="pusheen2.jpg" alt= "Pusheen linda">
-        <img src="pusheen1.jpg" alt= "Oi Pusheen">
+        <img src="pusheen1.jpg" class = "foto-post" alt= "Oi Pusheen">
         <img src="pusheen3.png">
 
         <div class="chuva">
@@ -23,6 +23,25 @@
             <div class="gota"></div>
             <div class="gota"></div>
         </div>
-        
-    </body>
-</html>
+
+        <div class="player-container">
+            <audio id="musica-site" src="musica-pusheen.mp3"></audio>
+            
+            <div class="player-container">
+                <audio id="musica-site" src="musica-pusheen.mp3"></audio>
+                
+                <button id="botao-controle" onclick="toggleMusica()">
+                    <span id="icone">▶</span>
+                    
+                    <div class="info-musica">
+                        <span class="status-texto">Now playing</span>
+                        <span class="nome-musica">Pusheen Theme</span>
+                    </div>
+                    
+                    <img src="pusheen3.png" class="pusheen-botao" alt="Pusheen icon">
+                </button>
+                
+                <div class="barra-progresso">
+                    <div id="progresso-atual"></div>
+                </div>
+            </div>
