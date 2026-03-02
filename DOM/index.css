@@ -1,0 +1,31 @@
+h1 {
+    font-size: 60px; 
+    margin-bottom: 10px; 
+}
+
+body {
+    background-color: rgb(240, 253, 255);
+    background-image: linear-gradient(
+        rgba(255, 240, 250, 0.7), 
+        rgba(255, 240, 250, 0.7)
+      );
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: #92d6f5;
+    font-family: "Delius", cursive;
+    text-align: center;
+}
+
+.foto-cina{
+    border-radius: 20px;
+    border: 5px solid #92d6f5;
+    box-shadow: 0px 0px 20px #92d6f5;
+    width: 400px;
+    height: 280px;
+    margin: 15px;
+    transition: 0.5s;
+}   
